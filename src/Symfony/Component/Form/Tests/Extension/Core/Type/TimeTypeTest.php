@@ -992,7 +992,7 @@ class TimeTypeTest extends BaseTypeTest
             'input' => 'array',
         ]);
 
-        $this->assertEquals($input, $form->getData());
+        $this->assertSame($input, $form->getData());
         $this->assertEquals([
             'hour' => '23',
             'minute' => '45',
